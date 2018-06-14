@@ -1,0 +1,74 @@
+
+body  { margin: 0; padding:0;background:#FAFAFA;}
+
+topo {width: 100%;  float: left;}
+corpo {width: 100%; float: left;}
+rodape {width: 100%;float: left;}
+
+ul{margin: 0; padding: 0; list-style: none;}                   /* para que o ul nao venha com aqueles pontos*/
+nav{float: left; width: 100%; background:#FFC204; font-weight: bold; font-family: verdana,sans-serif; color: #000000;}
+nav li{float: left; cursor:pointer;}
+nav li a {color:#000000; text-decoration: none;}
+a:hover{color: #FFFFFF;text-decoration: underline overline;font-size:110%}
+    nav li{float: left;}
+
+
+
+/* medias para design responsivo para que o site se adapte tanto na tela de um desktop quanto um tablet ou smartphone*/
+
+@media only screen and (max-width: 480px) {                   /*smartphone*/
+nav{height:100px; padding-left:15%;}
+nav li{width:100%;}
+.ind-logo{position: absolute; width:25%; left:0; top 0; text align: center;}
+    .ind-logo img {max-width: 100%;}
+.ind-vacina{position: absolute; width:25%;left:86%;padding-top:0.5%;text align: center;}
+    .ind-vacina img {max-width: 100%;}
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {                  /*tablet*/          
+nav{height:110px; padding-left:15%;}
+nav li{width:100%;}
+.ind-mosquito{position: absolute; width:25%; left:0; top 0; text align: center;}
+    .ind-mosquito img {max-width: 100%;}
+
+.ind-vacina{position: absolute; width:25%;left:86%;padding-top:0.5%;text align: center;}
+    .ind-vacina img {max-width: 100%;}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 769px) {                   /*desktop*/
+nav{height:220px; padding-left:15%;border-bottom:15px solid #DBA901;}
+nav li{width:14%; text-align: center; padding-top:9%;}
+
+
+.ind-mosquito{position: absolute; width:25%;left:3%;padding-top:0.5%;text align: center;}
+    .ind-mosquito img {max-width: 30%;}
+
+.ind-vacina{position: absolute; width:25%;left:86%;padding-top:0.5%;text align: center;}
+    .ind-vacina img {max-width: 30%;}
+
+.ind-titulo{position: absolute; width:25%;left:38%;padding-top:0;text align: center;}
+    .ind-titulo img {max-width: 100%;}
+
+.ind-conteudo{float:left;width:20%;height:300px;margin:150px 2.5% 20px 2.5%;background:#000000;}
+
+.ind-conteudo-title{float:left;width:100%;padding:10px 0;text-align:center;color:#FFFFFF;background:#000000;font-weight:bold;}
+
+.ind-conteudo-image{float:left;width:100%;}
+
+.ind-conteudo-image img{width:100%;}
+
+.ind-conteudo-texto{float:left;width:100%;padding:10px 0;color:#000000; text-align:center;line-height: 25px;}
+
+.rodape{float:left;position: absolute;bottom: 0; width:100%;background:#FFC204;padding:28px;border-top:15px solid #DBA901;}
+
+.rodapetexto{float:middle;margin-left:5%;width:65%;}
+
+
+}
